@@ -1,6 +1,18 @@
 # Helpex
+Contains all helper functions which can be used in your application.     
+The functions are grouped into different modules like `Map` , `List`
 
-**TODO: Add description**
+
+## How to Contribute ?
+
+### Coding
+
+Make a pull request with atleast one helper function of any category.
+Please provide doctest examples, so people shall find how to use it.
+
+Glad if you can write test cases.
+
+Happy Contributing :)
 
 ## Installation
 
