@@ -1,9 +1,9 @@
 # Helpex
 
-<img src = "assets/images/logo.png" />
-Contains all helper functions which can be used in your application.     
-The functions are grouped into different modules like `Map` , `List`
+<img src = "assets/images/logo.png"></img>
 
+Contains all helper functions which can be used in your application.     
+The functions are grouped into different modules like **Map**, **List**
 
 ## How to Contribute ?
 
