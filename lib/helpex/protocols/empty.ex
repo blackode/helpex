@@ -3,7 +3,7 @@ defprotocol Helpex.Empty do
   def empty?(data)
 end
 
-defimpl Helpex.Empty, for: [String, BitStrng] do
+defimpl Helpex.Empty, for: [String, BitString] do
   def empty?(string) do
     string = String.trim(string)
     string === ""
