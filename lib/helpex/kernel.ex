@@ -63,6 +63,50 @@ defmodule Helpex.Kernel do
   end
 
   @doc """
+  Determines if the map is empty.
+  If the map is empty it returns `true`, otherwise `false` 
+
+  However, if other type is passed it raises No `FunctionClauseError`.
+
+  ## Examples
+
+        iex> Helpex.Kernel.empty_map? %{}
+        true
+
+        iex> Helpex.Kernel.empty_map? %{hello: "blackode"}
+        false
+
+        iex> Helpex.Kernel.empty_map? 123
+        ** (FunctionClauseError) no function clause matching in Helpex.Kernel.empty_map?/1
+  """
+  @spec empty_map?(map()) :: boolean()
+  def empty_map?(map) when is_map(map) do
+    Helpex.Empty.empty?(map)
+  end
+
+  @doc """
+  Determines if the List is empty.
+  If the list is empty it returns `true`, otherwise `false` 
+
+  However, if other type is passed it raises No `FunctionClauseError`.
+
+  ## Examples
+
+        iex> Helpex.Kernel.empty_list? []
+        true
+
+        iex> Helpex.Kernel.empty_list? [a: 1]
+        false
+
+        iex> Helpex.Kernel.empty_list? 123
+        ** (FunctionClauseError) no function clause matching in Helpex.Kernel.empty_list?/1
+  """
+  @spec empty_list?(list()) :: boolean()
+  def empty_list?(list) when is_list(list) do
+    Helpex.Empty.empty?(list)
+  end
+
+  @doc """
   Determines if `this` or `that` evaluates to truthy. If so returns
   `true`, `false` if not.
 
